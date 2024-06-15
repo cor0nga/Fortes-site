@@ -1,0 +1,355 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-1: #0F468C;
+    --cor-2: #1152A4;
+    --cor-3: #176CD8;
+    --cor-4: #04BF8A;
+    --cor-5: #04E5A5;
+    --cor-6: #04FFC8;
+    --cor-7: #191B1C;
+
+    --fonte-padrao: 'Lato', Arial, Verdana, sans-serif;
+    --fonte-menu: 'Public Sans', Arial, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.shadow {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: #f2f2f2;
+}
+
+header {
+    height: 67px;
+    display: flex;
+    background-color: var(--cor-7);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+}
+
+#logoFortes {
+    width: 163px;
+    height: 43px;
+}
+
+nav#menuHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#notificPq {
+    width: 20px;
+    height: 20px;
+
+}
+
+#perfilPq {
+    width: 53px;
+    height: 53px;
+    border-radius: 100%;
+}
+
+nav#menu {
+    display: flex;
+    background-color: #ffffff;
+    height: 67px;
+    padding-left: 40px;
+    align-items: center;
+    gap: 20px;
+}
+
+nav#menu > a {
+    text-decoration: none;
+    color: #7B878C;
+    font-family: var(--fonte-menu);
+}
+
+main {
+    padding: 0px 15px;
+}
+
+section {
+    min-width: 320px;
+    max-width: 1530px;
+    margin: auto;
+}
+
+div#perfil {
+    background-color: #ffffff;
+    height: 320px;
+    margin-top: 60px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#bg-image {
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 100%;
+    background-image: url('images/bg-perfil.jpeg');
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#prof-image {
+    position: absolute;
+    z-index: 2;
+    background-image: url('images/imgPerfil-pq.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    top: 25%;
+    left: 2%;
+}
+
+#prof-dates {
+    position: absolute;
+    bottom: 0;
+    width: 79%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 19%;
+}
+
+#prof-dates > p {
+    font-size: 24px;
+}
+
+#container-dates {
+    display: flex;
+    gap: 20px;
+    font-size: 1em;
+}
+
+.prof-dates-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prof-dates-2 > .text-date {
+    color: #626C70;
+}
+
+article {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+#grid-esquerda {
+    width: 512px;
+}
+
+#grid-direita {
+    width: 994px;
+}
+
+#info {
+    background-color: white;
+    border-radius: 10px;
+    height: 272px;
+    font-family: var(--fonte-menu);
+}
+
+#container-info {
+    width: 70%;
+    margin: auto;
+}
+
+#container-info > h2 {
+    padding: 15px;
+    font-weight: normal;
+}
+
+#container-info > p {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#container-info > p.title {
+    font-size: 12px;
+    padding: 11px;
+    color: #959FA3;
+}
+
+#project {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    height: 184px;
+    font-family: var(--fonte-menu);
+}
+
+#project-container {
+    width: 70%;
+    margin: auto;
+}
+
+#project-container > h2 {
+    padding: 15px;
+    font-weight: normal;
+}
+
+#project-container > p {
+    font-size: 14px;
+    color: #7B878C;
+    margin-top: 30px;
+}
+
+#cAtendidas {
+    height: 416px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#cAtendidas > h2 {
+    padding: 15px;
+    font-weight: normal;
+}
+
+#cAtendidas > div {
+    margin: auto;
+    width: 830px;
+    height: 290px;
+    margin: 20px auto;
+    background-image: url('images/grafico1.jpeg');
+    background-size: cover;
+}
+
+#divisao-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.grid-break {
+    margin-top: 30px;
+    width: 467px;
+    height: 479px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: var(--fonte-menu);
+}
+
+#faixa-etaria-container {
+    width: 70%;
+    margin: auto;
+}
+
+#faixa-etaria-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+#faixa-etaria-header > h2 {
+    font-weight: normal;
+}
+
+#faixa-etaria-header > select {
+    border: none;
+    background-color: #e4e6e7;
+    border-radius: 3px;
+}
+
+#faixa-etaria-container > #image {
+    width: 320px;
+    height: 310px;
+    margin: 35px auto 0px auto;
+    background-image: url('images/grafico2.jpeg');
+    background-size: cover;
+}
+
+#comu-atendidas-container {
+    width: 70%;
+    margin: auto;
+}
+
+#comu-atendidas-container > h2 {
+    margin-top: 30px;
+    font-weight: normal;
+    padding: 15px;
+}
+
+#comu-atendidas-container > #image {
+    width: 360px;
+    height: 268px;
+    margin: 35px auto 0px auto;
+    background-image: url('images/grafico3.jpeg');
+    background-size: cover;
+}
+
+#ultimas-atv {
+    margin-top: 30px;
+    height: 470px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#ultimas-atv > h2 {
+    font-weight: normal;
+    padding: 15px 30px;
+}
+
+#registro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+}
+
+#registro > #perf-img {
+    width: 45px;
+    height: 45px;
+    background-image: url('images/imgPerfil-pq.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#ultimas-atv > #image {
+    height: 248px;
+    width: 470px;
+    margin: auto;
+}
+
+#image > img {
+    width: 470px;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    padding: 0px 40px;
+    font-size: 14px;
+    color: #626C70;
+}
+
+span > a {
+    text-decoration: none;
+    color: #626C70;
+}
+

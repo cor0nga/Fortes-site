@@ -1,0 +1,161 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #191B1C;
+            color: #f5f5f5;
+            padding: 10px 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 40px;
+        }
+        div.menu {
+            background-color: #ffffff;
+            color: #f2f2f2;
+            padding: 10px 35px;
+            text-decoration: none;
+            display: flex ;
+            gap: 50px;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            padding: 10px 35px;
+            display: flex;
+            justify-content: space-between;
+        }
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            margin: auto;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+            border-radius: 5px;
+
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        .status-pendente {
+            color: orange;
+        }
+        .status-concluido {
+            color: green;
+        }
+        .action-button {
+            background-color: #0F468C14;
+            color: #0f468c;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .atendimento-button{
+            background-color: #0f468c;
+            color: #ffffff;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 68px;
+            padding: 0px 40px;
+            font-size: 14px;
+            color: #626C70;
+            text-decoration: none;
+            display: flex;
+}
+        div > a{
+            text-decoration: none;
+            color: #7B878C;
+            margin-left: 10px;
+        }
+        .search-box{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 6px;
+            text-align: left;
+            width: 90%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            margin: auto;
+        }
+        a.novo.html{
+            text-decoration: none;
+            color: #ffffff;
+            margin-left: 10px
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/fortes-logo.png" alt="Logo">
+
+
+    </header>
+    <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="#">Instituições</a>
+            <a href="#">Atendimentos</a>
+    </div>
+    <div class="container">
+        <h1>ATENDIMENTOS</h1> 
+        <div class="search-box">
+            <label for="search">Pesquisar:</label>
+            <input type="text" id="search" name="search">
+        </div>
+        <br>
+        <table id="atendimentos-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>Instituição</th>
+                    <th>Tema</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        © Fortes Engenharia - feito por Grupo 3-2024 <br>
+        <a href="#">Documentation</a>&#x2022;<a href="#">Privacy Policy</a>&#x2022;<a href="#">FAQs</a>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="../geral.js"></script>
+</body>
+</html>

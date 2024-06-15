@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard ADM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 67px;
+            padding: 0 150px;
+        }
+
+        header .fortes img {
+            height: 43px;
+        }
+
+        header .admin img {
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 10px 0;
+            display: flex;
+            gap: 50px;
+            padding-left: 150px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7B878C;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            padding: 0 150px;
+        }
+
+        .content .atendimentos img {
+            width: 100%;
+            max-width: 1140px;
+            border-radius: 1%;
+            margin-bottom: 15px;
+        }
+
+        .calendar-section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1140px;
+        }
+
+        .calendar-section img {
+            border-radius: 1%;
+        }
+
+        .calendar-section .calendar {
+            height: 315px;
+        }
+
+        .calendar-section .budget {
+            width: calc(100% - 335px);
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px 0;
+            color: #7B878C;
+            gap: 40px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #7B878C;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="fortes">
+            <img src="./img/fortes-logo.png" alt="Imagem da logo Fortes">
+        </div>
+        <div class="admin">
+            <img src="img/adm.webp" alt="admin" onclick="window.location.href = '../index.html'">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Ações Sociais</a>
+        <a href="./atendimentos.html">Atendimento</a>
+    </nav>
+
+    <div class="content">
+        <div class="atendimentos">
+            <img src="img/Screenshot 2024-06-13 at 15.19.15.png" alt="Atendimentos Finalizados">
+        </div>
+
+        <div class="calendar-section">
+            <img src="img/Screenshot 2024-06-13 at 15.20.10.png" alt="Calendario" class="calendar">
+            <img src="img/Screenshot 2024-06-13 at 15.20.18.png" alt="Verbas" class="budget">
+        </div>
+    </div>
+
+    <footer>
+        &copy; Fortes Engenharia - feito por Grupo 3 &copy; 2024
+        <a href="#">Documentation</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">FAQs</a>
+    </footer>
+</body>
+</html>

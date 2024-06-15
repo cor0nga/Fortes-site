@@ -1,0 +1,176 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo atendimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #191B1C;
+            color: #f5f5f5;
+            padding: 10px 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 40px;
+        }
+        nav {
+            background-color: #ffffff;
+            color: #f2f2f2;
+            padding: 10px 35px;
+            text-decoration: none;
+            display: flex;
+            gap: 50px;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            padding: 10px 35px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav > a {
+            text-decoration: none;
+            color: #7B878C;
+            margin-left: 10px;
+        }
+        .form-row {
+            display: flex;
+            gap: 30px;
+            padding: 10px 35px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-group textarea {
+            width: calc(100% - 70px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-left: 35px;
+        }
+        .atendimento-button {
+            width: 91px;
+            height: 32px;
+            background-color: #0f468c;
+            color: #ffffff;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 68px;
+            padding: 0px 40px;
+            font-size: 14px;
+            color: #626C70;
+            text-decoration: none;
+            display: flex;
+        }
+        #voltar {
+            text-decoration: none;
+            color: #7B878C;
+            margin: 10px;
+        }
+        .assunto{
+            margin-left: 38px;
+        }
+        .voltar-button {
+            background-color: #ffffff;
+            color: #0f468c;
+            padding: 8px 20px;
+            border-color:  #0f468c ;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./img/fortes-logo.png" alt="Logo">
+    </header>
+    
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="#">Instituições</a>
+        <a href="./atendimentos.html">Atendimentos</a>
+    </nav>
+
+    <button class="voltar-button" onclick="voltar()">VOLTAR</button>
+
+    <h1>NOVO ATENDIMENTO</h1>
+
+    <form id="new-atendimento-form">
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="titulo">TÍTULO</label>
+                <input type="text" id="titulo">
+            </div>
+
+            <div class="form-group">
+                <label for="Instituição">Instituição</label>
+                <select name="Instituição" id="projeto">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Instituição 1">Instituição 1</option>
+                    <option value="Instituição 2">Instituição 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="categoria">CATEGORIA</label>
+                <select name="categoria" id="categoria">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Financeiro">Financeiro</option>
+                    <option value="RH">RH</option>
+                    <option value="Administrativo">Administrativo</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="assunto" for="texto-assunto">ASSUNTO</label>
+            <textarea name="texto-assunto" id="texto-assunto"></textarea>
+        </div>
+        <button class="atendimento-button" onclick="criarAtendimento()">ENVIAR</button>
+    </form>
+
+    <footer>
+        © Fortes Engenharia - feito por Grupo 3-2024 <br>
+        <a href="#">Documentation</a>&#x2022;<a href="#">Privacy Policy</a>&#x2022;<a href="#">FAQs</a>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
